@@ -1,0 +1,158 @@
+[
+  {
+    "ContainingType": "AppMultiUsos.Controllers.CalculadoraController",
+    "Method": "Calcular",
+    "RelativePath": "api/Calculadora",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "operacion",
+        "Type": "CalculadoraDePrestamos.DTOs.OperacionCalculadoraDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AppMultiUsos.Controllers.CalculadoraDivisasController",
+    "Method": "Post",
+    "RelativePath": "api/CalculadoraDivisas",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "modelo",
+        "Type": "AppMultiUsos.Modelos.CalculadoraDivisas.CalcularDivisas",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AppMultiUsos.Controllers.PrestamoController",
+    "Method": "Calcular",
+    "RelativePath": "api/Prestamo/calcular",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "solicitudPrestamoDTO",
+        "Type": "CalculadoraDePrestamos.DTOs.SolicitudPrestamoDTO",
+        "IsRequired": true
+      },
+      {
+        "Name": "Pagina",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "RecordsPorPagina",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AppMultiUsos.Controllers.PrestamoUsuarioController",
+    "Method": "Get",
+    "RelativePath": "api/PrestamoUsuario",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CalculadoraDePrestamos.DTOs.DTOsUsuarios.SolicitudPrestamoUsuarioDTO, AppMultiUsos, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AppMultiUsos.Controllers.PrestamoUsuarioController",
+    "Method": "Calcular",
+    "RelativePath": "api/PrestamoUsuario/calcular",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "solicitudPrestamoUsuarioCreacionDTO",
+        "Type": "CalculadoraDePrestamos.DTOs.DTOsUsuarios.SolicitudPrestamoUsuarioCreacionDTO",
+        "IsRequired": true
+      },
+      {
+        "Name": "Pagina",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "RecordsPorPagina",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AppMultiUsos.Controllers.UsuariosController",
+    "Method": "Login",
+    "RelativePath": "api/Usuarios/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "credencialesUsuarioDTO",
+        "Type": "AppMultiUsos.DTOs.DTOsUsuarios.CredencialesUsuarioDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AppMultiUsos.DTOs.DTOsUsuarios.RespuestaAutenticacionDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AppMultiUsos.Controllers.UsuariosController",
+    "Method": "Registrar",
+    "RelativePath": "api/Usuarios/registrar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "credencialesUsuarioDTO",
+        "Type": "AppMultiUsos.DTOs.DTOsUsuarios.CredencialesUsuarioDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AppMultiUsos.DTOs.DTOsUsuarios.RespuestaAutenticacionDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
